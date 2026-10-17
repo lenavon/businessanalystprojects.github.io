@@ -39,7 +39,12 @@
   .card p{margin:0 0 14px;color:var(--muted)}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}
   .tags li{background:var(--tint);color:var(--brand);font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px}
-  .links a{font-weight:600;font-size:14px;margin-right:16px}
+  .links{display:flex;flex-wrap:wrap;gap:8px 18px}
+  .links a{font-weight:600;font-size:14px}
+  video.demo{width:100%;border-radius:8px;border:1px solid var(--border);margin:6px 0 16px;background:var(--tint);display:block}
+  .stats{list-style:none;padding:0;margin:0 0 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .stats li{border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--muted)}
+  .stats b{display:block;font-size:20px;color:var(--ink);font-family:"IBM Plex Serif",Georgia,serif}
   .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
   .skills .card{margin:0;padding:18px}
   .skills h3{font-size:16px;margin:0 0 6px}
@@ -65,13 +70,24 @@
     <h2>Projects</h2>
 
     <article class="card">
-      <div class="meta">10Alytics Students Hackathon 2026 · AI and the Future of Work</div>
-      <h3>Checkpoint: human-in-the-loop AI for hospital readmission follow-up</h3>
-      <p>A prototype for a fictional two-site hospital network. An AI model ranks discharged patients by readmission risk and explains each score in plain language. Follow-up nurses approve or override each suggestion, and every decision is logged. Records stewards resolve duplicate patient records, and a governance committee reviews overrides and unscored cases.</p>
-      <ul class="tags"><li>Stakeholder mapping</li><li>Process design</li><li>Responsible AI</li><li>Data quality</li><li>Prototyping</li></ul>
+      <div class="meta">10Alytics Students Hackathon 2026 · AI and the Future of Work · Team Pod Nova</div>
+      <h3>Checkpoint: who decides what, and when?</h3>
+      <video class="demo" controls preload="none" poster="https://lenavon.github.io/10alytics-Hackathon---Checkpoint-/docs/demo-poster.jpg">
+        <source src="https://lenavon.github.io/10alytics-Hackathon---Checkpoint-/docs/Checkpoint_Demo.mp4" type="video/mp4">
+      </video>
+      <p>Two hospitals had merged and wanted AI to predict 30-day readmissions, but nobody owned the decisions once AI was in the loop. We mapped stakeholders and the AS-IS and TO-BE workflows, then designed a decision-rights model: the AI scores and sorts patients, and four mandatory human checkpoints keep a named person accountable for identity matches, low-confidence cases, every risk tier and monthly governance.</p>
+      <ul class="stats">
+        <li><b>4</b>human checkpoints</li>
+        <li><b>~12 mo</b>payback (illustrative)</li>
+        <li><b>~210%</b>3-year return (illustrative)</li>
+        <li><b>28 wks</b>to supervised go-live</li>
+      </ul>
+      <ul class="tags"><li>Stakeholder analysis &amp; RACI</li><li>Process mapping</li><li>AI governance</li><li>Business case</li><li>Requirements &amp; traceability</li><li>Prototyping</li></ul>
       <div class="links">
         <a href="https://lenavon.github.io/10alytics-Hackathon---Checkpoint-/">Live prototype →</a>
-        <a href="https://github.com/lenavon/10alytics-Hackathon---Checkpoint-">Case study &amp; code →</a>
+        <a href="https://github.com/lenavon/10alytics-Hackathon---Checkpoint-/blob/main/docs/Lakeside_Business_Case.pdf">Business case →</a>
+        <a href="https://github.com/lenavon/10alytics-Hackathon---Checkpoint-/blob/main/docs/Checkpoint_Pitch_Deck.pdf">Pitch deck →</a>
+        <a href="https://github.com/lenavon/10alytics-Hackathon---Checkpoint-">Repository →</a>
       </div>
     </article>
   </section>
