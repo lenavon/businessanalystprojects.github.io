@@ -17,4 +17,4 @@ I'm a Business Analyst (CBAP, CA, FMVA, MBA) based in Calgary, with 8+ years in 
 
 ## Site
 
-A single static `index.html` file plus `assets/`, with no build step. It's published through GitHub Pages: Settings → Pages → Deploy from branch `main`, root folder.
+A single static `index.html` file with no build step. It's published through GitHub Pages: Settings → Pages → Deploy from branch `main`, root folder.
